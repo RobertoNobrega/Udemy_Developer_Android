@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="roberto.nobrega.appminhaideia">
+
+    <!-- OBS: Na pasta manifests, deve existir apenas um único arquivo "Manifest". Ou seja, como o AndroidStudio
+         criou, por padrão, o AndroidManifest.xml , não pode criar um outro "Manifest".
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppMinhaIdeia">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Aqui, nesta tag chamada activity, está informando que a classe que vai ser usada para
+        "startar" o aplicativo no dispositivo (no caso, no celular), vai ser a classe MainActivity. Na linha
+         16, diz que o Android vai buscar a classe "MAIN", para poder executar o aplicativo. Na linha 18, diz
+         que a classe que vai "startar" o aplicativo (no caso, MainActivity) será a "Classe Lançadora".
+         -->
+    </application>
+
+</manifest>
