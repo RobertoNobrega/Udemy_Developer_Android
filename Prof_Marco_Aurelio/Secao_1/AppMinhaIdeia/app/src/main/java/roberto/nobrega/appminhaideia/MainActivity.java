@@ -1,7 +1,7 @@
 package roberto.nobrega.appminhaideia;
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 // OBS: Essa classe vai "carregar" nosso app.
 // OBS2:   Toda classe, quando é uma Activity, possui um xml associado a classe.
@@ -17,12 +17,16 @@ import android.os.Bundle;
  */
 public class MainActivity extends AppCompatActivity {
 
+    String TAG = "APP_MINHA_IDEIA";
+
     @Override
     protected void onCreate(Bundle savedInstanceState){ // Este método vai ser chamado, para "startar" o app.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // Este método está carregando uma tela (representado pelo
         // de layout ( em xml ), que é uma tela para o aplicativo. A tela que está sendo carregada é a tela
         // activity_main.xml .
+        // OBS: logd (seguido de ctrl mais a tecla de espaço, vai mostrar uma opção de função a ser inserida (logo abaixo)).
+        Log.d(TAG, "onCreate: Tela Principal Carregada."); // Este método exibe mensagem no Logcat do AndroidStudio.
     }
 
 }

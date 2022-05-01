@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="roberto.nobrega.appminhaideia">
 
-    <!-- OBS: Na pasta manifests, deve existir apenas um único arquivo "Manifest". Ou seja, como o AndroidStudio
-         criou, por padrão, o AndroidManifest.xml , não pode criar um outro "Manifest".
-    -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,20 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppMinhaIdeia">
+
+        <!--    Antes (OBS: Os comentários estão em //)
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" /> // Esta tag foi criada automaticamente pelo AndroidStudio, pois o programador
+            // criou (usando os recursos do AndroidStudio) uma classe, chamada de SplashActivity.
+
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"> // Esta tag foi criada automaticamente pelo AndroidStudio.
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Aqui, nesta tag chamada activity, está informando que a classe que vai ser usada para
-        "startar" o aplicativo no dispositivo (no caso, no celular), vai ser a classe MainActivity (indicada em
-         android:name=".MainActivity"). Na linha 19, diz que o Android vai buscar a classe "MAIN", para poder
-         executar o aplicativo. Na linha 21, diz que a classe que vai "startar" o aplicativo (no caso, MainActivity)
-         será a "Classe Lançadora".
-         -->
+        </activity>
+        -->
+
+        <!-- Depois -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- Esta tag foi criada automaticamente pelo AndroidStudio -->
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"> <!-- Aqui, está informando que a tela "lançadora" da Aplicação será a SplashActivity. Ou seja,
+            quando o aplicativo for executado inicialmente, vai exibir a tela de Splash. -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
