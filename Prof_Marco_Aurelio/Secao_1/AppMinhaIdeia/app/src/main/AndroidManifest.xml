@@ -21,9 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- Aqui, nesta tag chamada activity, está informando que a classe que vai ser usada para
-        "startar" o aplicativo no dispositivo (no caso, no celular), vai ser a classe MainActivity. Na linha
-         16, diz que o Android vai buscar a classe "MAIN", para poder executar o aplicativo. Na linha 18, diz
-         que a classe que vai "startar" o aplicativo (no caso, MainActivity) será a "Classe Lançadora".
+        "startar" o aplicativo no dispositivo (no caso, no celular), vai ser a classe MainActivity (indicada em
+         android:name=".MainActivity"). Na linha 19, diz que o Android vai buscar a classe "MAIN", para poder
+         executar o aplicativo. Na linha 21, diz que a classe que vai "startar" o aplicativo (no caso, MainActivity)
+         será a "Classe Lançadora".
          -->
     </application>
 

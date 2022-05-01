@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="cor_minha_ideia">#9470F1CC</color> <!-- O professor ensinou a 'criar e inserir sua própria cor', no arquivo
+       de colors. -->
+    <color name="black_color">#504B4B</color>
 </resources>

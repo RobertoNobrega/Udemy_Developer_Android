@@ -4,12 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
+    <!--
+                A tela de Splash
+       Tem que ficar (no ar), durante alguns segundos,
+       porém, não pode ser um tempo enorme, pois se
+       for, o Android encerra sua aplicação.
+       Durante a apresentação da tela Splash, o app
+       pode fazer algumas operações, como, por
+       exemplo, recuperar algum dado, obter coordena-
+       da GPS, entre outras operações.
+       O Prof.Marco está usando o protótipo de baixa fi-
+       delidade. Esse protótipo informa apenas a ideia
+       principal (ideia principal do app), sem apresen-
+       tar funcionalidades.
+    -->
+
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_width="276dp"
+        android:layout_height="60dp"
+        android:text="@string/app_name"
+        android:textColor="#055AFF"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
