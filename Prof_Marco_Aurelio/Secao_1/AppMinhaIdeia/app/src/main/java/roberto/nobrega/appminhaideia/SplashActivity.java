@@ -10,7 +10,7 @@ import android.util.Log;
 
 public class SplashActivity extends AppCompatActivity{
 
-    int tempoDeEspera = 1000 * 5;   // 5000 milissegundos.
+    int tempoDeEspera = 1000 * 5;   // 5000 milissegundos (5 segundos).
     String TAG = "APP_MINHA_IDEIA";
 
     @Override
